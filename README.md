@@ -1,11 +1,11 @@
-About r-xml2r
-=============
+About r-xml2r-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-xml2r-feedstock/blob/main/LICENSE.txt)
 
 Home: http://cpsievert.github.com/XML2R
 
 Package license: GPL-2.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-xml2r-feedstock/blob/main/LICENSE.txt)
 
 Summary: XML2R is a framework that reduces the effort required to transform XML content into number of tables while preserving parent to child relationships.
 
