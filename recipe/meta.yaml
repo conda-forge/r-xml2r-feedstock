@@ -1,6 +1,5 @@
 {% set version = '0.0.6' %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-xml2r
@@ -13,8 +12,7 @@ source:
   sha256: 65767bde43d276698e99ab8e6e0941fe1f4a5b1df3ef60c76467890c4a82ee2b
 
 build:
-  merge_build_host: True  # [win]
-  number: 2
+  number: 3
   noarch: generic
   rpaths:
     - lib/R/lib/
