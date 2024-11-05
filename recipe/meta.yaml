@@ -1,4 +1,4 @@
-{% set version = '0.0.6' %}
+{% set version = "0.0.8" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/XML2R_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/XML2R/XML2R_{{ version }}.tar.gz
-  sha256: 65767bde43d276698e99ab8e6e0941fe1f4a5b1df3ef60c76467890c4a82ee2b
+  sha256: bff23b583d00a04c1dd7a58830b43c9a8468a754cc23b5e68cd410bb8aef5aef
 
 build:
-  number: 3
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -41,8 +41,7 @@ test:
 about:
   home: http://cpsievert.github.com/XML2R
   license: GPL-2.0-or-later
-  summary: XML2R is a framework that reduces the effort required to transform XML content into
-    number of tables while preserving parent to child relationships.
+  summary: XML2R is a framework that reduces the effort required to transform XML content into number of tables while preserving parent to child relationships.
   license_family: GPL2
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
