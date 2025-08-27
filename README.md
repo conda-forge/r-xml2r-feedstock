@@ -3,7 +3,7 @@ About r-xml2r-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-xml2r-feedstock/blob/main/LICENSE.txt)
 
-Home: http://cpsievert.github.com/XML2R
+Home: https://github.com/cpsievert/XML2R
 
 Package license: GPL-2.0-or-later
 
