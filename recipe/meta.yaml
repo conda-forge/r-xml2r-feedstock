@@ -24,14 +24,14 @@ requirements:
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
-    - r-rcurl
-    - r-xml
+    - r-httr
     - r-plyr
+    - r-xml
   run:
     - r-base
-    - r-rcurl
-    - r-xml
+    - r-httr
     - r-plyr
+    - r-xml
 
 test:
   commands:
@@ -39,30 +39,14 @@ test:
     - "\"%R%\" -e \"library('XML2R')\""  # [win]
 
 about:
-  home: http://cpsievert.github.com/XML2R
+  home: https://github.com/cpsievert/XML2R
   license: GPL-2.0-or-later
   summary: XML2R is a framework that reduces the effort required to transform XML content into number of tables while preserving parent to child relationships.
   license_family: GPL2
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
     - conda-forge/r
-
-# Package: XML2R
-# Title: EasieR XML data collection
-# Version: 0.0.6
-# Author: Carson Sievert <sievert@iastate.edu>
-# Maintainer: Carson Sievert <sievert@iastate.edu>
-# Description: XML2R is a framework that reduces the effort required to transform XML content into number of tables while preserving parent to child relationships.
-# License: GPL (>= 2)
-# Depends: R (>= 2.15.1), XML
-# Imports: RCurl, plyr
-# Date: 2014-03-09
-# URL: http://cpsievert.github.com/XML2R
-# BugReports: http://github.com/cpsievert/XML2R/issues
-# Packaged: 2014-03-09 21:06:15 UTC; cpsievert
-# NeedsCompilation: no
-# Repository: CRAN
-# Date/Publication: 2014-03-10 00:29:38
